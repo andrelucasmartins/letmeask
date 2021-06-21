@@ -1,6 +1,8 @@
-# Getting Started with Create React App
+# Let Me Ask
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Letmeask is a web application, which is responsible for saving many users' questions.
+The interface is made up of a user's and an administrator's visual, listing all the questions.
+Being able to manipulate the list of questions. 
 
 ## Available Scripts
 
