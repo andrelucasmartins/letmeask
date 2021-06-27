@@ -1,5 +1,6 @@
 import { FormEvent, useState } from 'react'
 import { useHistory } from 'react-router-dom'
+import toast, { Toaster } from 'react-hot-toast'
 
 import illustrationImg from '../assets/images/illustration.svg'
 import logoImg from '../assets/images/logo.svg'
@@ -35,7 +36,12 @@ export function Home() {
     const roomRef = await database.ref(`rooms/${roomCode}`).get()
 
     if (!roomRef.exists()) {
-      alert('Room does not exists.')
+      toast.error('Room does not exists.')
+      return;
+    }
+
+    if (roomRef.val().endedAt) {
+      toast.error("Room Already closed.")
       return;
     }
 
@@ -70,6 +76,10 @@ export function Home() {
             <Button type="submit">
               Entrar na sala
             </Button>
+            <Toaster
+              position="top-right"
+              reverseOrder={false}
+            />
           </form>
         </div>
       </main>

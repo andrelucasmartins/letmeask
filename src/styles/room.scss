@@ -11,11 +11,21 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      
+      > img {
+        max-height: 45px;
+      }
+  
+      > div {
+        display: flex;
+        gap: 16px;
+  
+        button {
+          height: 40px;
+        }
+      }
     }
 
-    > img {
-      max-height: 45px;
-    }
   }
   main {
     max-width: 800px;
@@ -93,6 +103,10 @@
           }
         }
       }
+    }
+
+    .question-list {
+      margin-top: 32px;
     }
   }
 }
