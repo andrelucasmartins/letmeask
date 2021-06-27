@@ -1,0 +1,16 @@
+$bg-ice-white: #f8f8f8;
+$white: #fff;
+$black: #29292e;
+$purple: #835afd;
+
+$font-roboto: 'Roboto', sans-serif;
+$font-poppins: 'Poppins', sans-serif;
+
+:export {
+  bg-ice-white: $bg-ice-white;
+  white: $white;
+  black: $black;
+  purple: $purple;
+  font-roboto: $font-roboto;
+  font-poppins: $font-poppins;
+}
