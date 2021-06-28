@@ -10,6 +10,19 @@
     margin-top: 8px;
   }
 
+  &.highlighted {
+    background: #f4f0ff;
+    border: 1px solid $purple;
+
+    footer .user-info span {
+      color: $black;
+    }
+  }
+
+  &.answered {
+    background: #DBDCDD;
+  }
+
   p {
     color: $black;
   }
@@ -36,6 +49,11 @@
         color: #737380;
         font-size: 14px;
       }
+    }
+
+    > div {
+      display: flex;
+      gap: 16px;
     }
 
     button {
